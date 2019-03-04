@@ -41,6 +41,8 @@
         //body请求
         [self HTTPBody:model.urlStr prams:model.params body:model.bodyDic requestMethod:methodArray[model.requestMethod] responseCache:responseCaches success:success failure:failure];
     }else{
+        //FIXME:这里配置头文件参数
+        [self setValue:@"9" forHTTPHeaderField:@"fromType"];
         switch (model.requestMethod) {
             case CPXRequestMethodGET:
                 [self GET:model.urlStr parameters:model.params responseCache:responseCaches success:success failure:failure];
