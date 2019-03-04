@@ -1,0 +1,14 @@
+//
+//  GlobalPCH.pch
+//  demo
+//
+//  Created by CPX on 2018/11/13.
+//  Copyright © 2018 CPX. All rights reserved.
+//
+
+#ifndef GlobalPCH_pch
+#define GlobalPCH_pch
+
+#import "BaseLib.h"
+
+#endif /* GlobalPCH_pch */

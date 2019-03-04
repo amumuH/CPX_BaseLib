@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'BaseLibs' do
+   inhibit_all_warnings!
+
+    pod 'AFNetworking'  #网络请求
+    pod 'FORScrollViewEmptyAssistant' #空占位图
+    pod 'SDWebImage'       #网络图片加载
+    pod 'MBProgressHUD', '~> 1.1.0'  #加载菊花
+    pod 'YYCache'    #缓存
+    pod 'IQKeyboardManager'     #自动处理键盘遮挡
+    pod 'ZLPhotoBrowser'    #图片选择器以及浏览器
+    pod 'MJRefresh'    #刷新控件
+    pod 'Masonry', '~> 1.1.0'               #布局库
+    pod 'MJExtension'                      #model与字典的处理
+    pod 'CTMediator'    #组件化开发的库
+
+end
