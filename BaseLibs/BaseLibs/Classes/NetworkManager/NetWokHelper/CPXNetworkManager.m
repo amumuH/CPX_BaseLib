@@ -15,15 +15,20 @@
 + (void)CPXRequestWithNetworkModel:(CPXNetworkManagerModel *)model success:(CPXHttpRequestSuccess)success failure:(CPXHttpRequestFailed)failure {
 
     [self CPXRequestWithNetworkModel:model responseCache:nil success:success failure:failure];
-    
-    
-   
 }
 
 + (void)CPXRequestWithNetworkModel:(CPXNetworkManagerModel *)model
                      responseCache:(CPXHttpRequestCache)responseCaches
                            success:(CPXHttpRequestSuccess)success
                            failure:(CPXHttpRequestFailed)failure {
+    
+    /**
+        网络框架缓存逻辑
+        通过Model里面的参数来控制
+        1 首先判断缓存时间是否过期 
+    
+     */
+    
     
     
     //判断缓存是否过期 NO 有效 YES 无效  （并判断是否为主动刷新数据）
@@ -53,7 +58,6 @@
             case CPXRequestMethodPUT:
                 [self PUT:model.urlStr parameters:model.params responseCache:responseCaches success:success failure:failure];
                 break;
-                
             case CPXRequestMethodPATCH:
                 [self PATCH:model.urlStr parameters:model.params responseCache:responseCaches success:success failure:failure];
                 break;
