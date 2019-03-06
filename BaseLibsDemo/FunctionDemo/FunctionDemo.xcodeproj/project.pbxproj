@@ -85,11 +85,9 @@
 		C9CF17D0222F675E009157FE /* FunctionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C9CF17F3222F6CA9009157FE /* 网络请求 */,
 				C9CF17EB222F69FD009157FE /* BaseController.h */,
 				C9CF17EA222F69FD009157FE /* BaseController.m */,
-				C9CF17EE222F69FD009157FE /* DemoBaseController.h */,
-				C9CF17EC222F69FD009157FE /* DemoBaseController.m */,
-				C9CF17ED222F69FD009157FE /* DemoBaseController.xib */,
 				C9CF17D1222F675E009157FE /* AppDelegate.h */,
 				C9CF17D2222F675E009157FE /* AppDelegate.m */,
 				C9CF17D4222F675E009157FE /* ViewController.h */,
@@ -103,6 +101,16 @@
 				C9CF17F2222F6AB7009157FE /* PrefixHeader.pch */,
 			);
 			path = FunctionDemo;
+			sourceTree = "<group>";
+		};
+		C9CF17F3222F6CA9009157FE /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF17EE222F69FD009157FE /* DemoBaseController.h */,
+				C9CF17EC222F69FD009157FE /* DemoBaseController.m */,
+				C9CF17ED222F69FD009157FE /* DemoBaseController.xib */,
+			);
+			path = "网络请求";
 			sourceTree = "<group>";
 		};
 		CE14862EE6CBC31B57867226 /* Frameworks */ = {
@@ -213,7 +221,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FunctionDemo/Pods-FunctionDemo-resources.sh",
-				"${PODS_ROOT}/../../BaseLibs/BaseLibs/DemoBaseController.xib",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FORScrollViewEmptyAssistant/FORScrollViewEmptyAssistant.bundle",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
@@ -231,7 +238,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DemoBaseController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FORScrollViewEmptyAssistant.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
@@ -407,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3GY5A3Y9Y;
-				GCC_PREFIX_HEADER = $SRCROOT/FunctionDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/FunctionDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = FunctionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3GY5A3Y9Y;
-				GCC_PREFIX_HEADER = $SRCROOT/FunctionDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/FunctionDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = FunctionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

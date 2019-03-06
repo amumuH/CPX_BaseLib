@@ -55,7 +55,7 @@ PODS:
     - SDWebImage
 
 DEPENDENCIES:
-  - BaseLibs (from `../BaseLibs`)
+  - BaseLibs (from `../../BaseLibs`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -78,7 +78,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   BaseLibs:
-    :path: "../BaseLibs"
+    :path: "../../BaseLibs"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -99,6 +99,6 @@ SPEC CHECKSUMS:
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   ZLPhotoBrowser: 6dfadc4706429424f0a851fe40752aff076689ab
 
-PODFILE CHECKSUM: 886bfe13eee6870dd832d2fed3f61e4b6fabe66a
+PODFILE CHECKSUM: 38a1d91a58574689bdb4a737f0037ead37c12a46
 
 COCOAPODS: 1.5.3

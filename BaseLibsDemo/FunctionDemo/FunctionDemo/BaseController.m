@@ -7,8 +7,10 @@
 //
 
 #import "BaseController.h"
+#import "DemoBaseController.h"
 
 @interface BaseController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,strong) NSMutableArray *titleArray;
 
 @end
 
@@ -17,7 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self configData];
     [self configTable];
+}
+
+- (void)configData {
+    NSArray *array = [NSArray arrayWithObjects:@"网络缓存",@"test",@"test",nil];
+    [self.titleArray addObjectsFromArray:array];
 }
 
 - (void)configTable {
@@ -30,7 +38,7 @@
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.titleArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -39,7 +47,8 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
     }
-    cell.textLabel.text = @"test";
+    NSString *title = [NSString cpx_safetyStringByObject:self.titleArray[indexPath.row]];
+    cell.textLabel.text = title;
     return cell;
 }
 
@@ -51,7 +60,10 @@
 
 - (void)chooseFunctionType:(NSInteger)type {
     switch (type) {
-        case 0:
+        case 0:{
+            DemoBaseController *vc = [[DemoBaseController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             
             break;
             
@@ -60,6 +72,14 @@
     }
 }
 
+
+#pragma mark - getter setter
+- (NSMutableArray *)titleArray {
+    if (!_titleArray) {
+        _titleArray = [[NSMutableArray alloc] init];
+    }
+    return _titleArray;
+}
 
 
 
