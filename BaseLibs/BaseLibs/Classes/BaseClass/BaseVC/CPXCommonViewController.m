@@ -35,10 +35,7 @@
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    if (self.navBarBgAlpha == 0) {
-        UIImage  * bg_corner_navi =[[UIImage imageNamed:@"bg_navibar_bottom_corner"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 30, 30) resizingMode:UIImageResizingModeStretch];
-        [self.navigationController.navigationBar setBackgroundImage:bg_corner_navi forBarMetrics:UIBarMetricsDefault];
-    }
+
     
 }
 //基本初始化
@@ -78,6 +75,7 @@
 
 - (void)initDefaultNavigation{
     self.navBarBgAlpha = 1;//设置导航栏透明度
+    self.navBarTintColor = [UIColor redColor];
     self.navigationController.navigationBar.shadowImage = [UIImage new];//去除导航栏下方阴影
 }
 

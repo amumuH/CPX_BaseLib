@@ -18,7 +18,7 @@
 
 #define loading_ImageName @"image_place_holder"           //加载图片占位图
 
-#define default_nav_back_img @"system_navi_back"     //导航栏默认返回按钮
+#define default_nav_back_img @"system_navi_back_white"     //导航栏默认返回按钮
 
 
 
