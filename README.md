@@ -51,50 +51,28 @@
 	
 ### Categories
 	UIBarButtonItem+Badge.h 		用于UIBarButtonItem的角标设置
-	
 	UIImage+Color.h					用于color转image、image转color、调整图片方向、图片无损压缩、压缩图片到指定文件大小(kb)、将图片裁剪到制定像素、传入需要的占位图尺寸 获取占位图
-
-	NSDictionary+Basic.h				用于处理不安全字典（null，@“” 等的处理）
-
-	UIScrollView+Basic.h				用于处理取消scrollview刷新、添加头部刷新(自动处理网络请求配置model，关闭菊花的开关以及打开是手动刷新)、添加尾部刷新(自动处理网络请求配置model，关闭菊花的开关以及打开是手动刷新)
-
-	UIButton+Badge.h						用于UIButton的角标设置
-
-	UIButton+ImageTitleSpacing.h		用于设置button的titleLabel和imageView的布局样式，及间距
-
-	UIButton+touch.h						用于处理按钮的暴力点击事件
-
-	UIView+AZGradient.h					用于绘制View渐变色
-
-	UIView+Basic.h						用于绘制不同类型图片圆角
-
-	UIView+GetController.h				用于获取view的所在的controller、获取view所在UITableViewCell、根据点击的视图 、获取当前indexPath
-
-	UIView+Storyboard.h					用于给xib和SB增加额外的属性：边界颜色、边界宽度、圆角
-
-	UINavigation-SXFixSpace文件夹  	用于处理不同系统导航栏按钮的显示位置、热区范围
-
-	UIBarButtonItem+SXCreate.h			用于处理自定义导航栏按钮带来的偏移以及点击范围等问题
-
+	NSDictionary+Basic.h			用于处理不安全字典（null，@“” 等的处理）
+	UIScrollView+Basic.h			用于处理取消scrollview刷新、添加头部刷新(自动处理网络请求配置model，关闭菊花的开关以及打开是手动刷新)、添加尾部刷新(自动处理网络请求配置model，关闭菊花的开关以及打开是手动刷新)
+	UIButton+Badge.h					用于UIButton的角标设置
+	UIButton+ImageTitleSpacing.h	用于设置button的titleLabel和imageView的布局样式，及间距
+	UIButton+touch.h					用于处理按钮的暴力点击事件
+	UIView+AZGradient.h				用于绘制View渐变色
+	UIView+Basic.h					用于绘制不同类型图片圆角
+	UIView+GetController.h			用于获取view的所在的controller、获取view所在UITableViewCell、根据点击的视图 、获取当前indexPath
+	UIView+Storyboard.h				用于给xib和SB增加额外的属性：边界颜色、边界宽度、圆角
+	UINavigation-SXFixSpace文件夹  用于处理不同系统导航栏按钮的显示位置、热区范围
+	UIBarButtonItem+SXCreate.h		用于处理自定义导航栏按钮带来的偏移以及点击范围等问题
 	CPXBaseNavigationController+Smoonth.h 用于处理平滑处理导航栏侧滑渐变效果
-
-	UITextView+Placeholder.h			用于为UITextView增加 paceHoder属性
-
-	UILabel+init.h						用于UILabel的快速创建方式
-
-	UIImageView+Basic.h					用于异步加载图片
-
-	NSString+AttributedString.h		用于富文本的处理
-
-	NSString+Basic.h						用于不安全的字符串转换为安全字符串、获取字符串的size、字典转字json符串、数组转json字符串、json字符串转数组等
-
-	NSString+STRegex.h					用于正则表达式相关处理
-
-	NSString+timer.h 					用于时间与字符串之间的相互转换之间的处理
-
-	NSArray+Basic.h						处理不安全数组
-
-	NSObject+Basic.h						数据持久化（单列存储）
+	UITextView+Placeholder.h		用于为UITextView增加 paceHoder属性
+	UILabel+init.h					用于UILabel的快速创建方式
+	UIImageView+Basic.h				用于异步加载图片
+	NSString+AttributedString.h	用于富文本的处理
+	NSString+Basic.h					用于不安全的字符串转换为安全字符串、获取字符串的size、字典转字json符串、数组转json字符串、json字符串转数组等
+	NSString+STRegex.h				用于正则表达式相关处理
+	NSString+timer.h 				用于时间与字符串之间的相互转换之间的处理
+	NSArray+Basic.h					处理不安全数组
+	NSObject+Basic.h					数据持久化（单列存储）
 	
 
 	 
