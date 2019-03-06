@@ -77,6 +77,7 @@
 		C95FA677222CC704009AD188 /* DemoBaseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95FA675222CC704009AD188 /* DemoBaseController.xib */; };
 		C996BFCA21E4759000C9D47E /* UILabel+init.m in Sources */ = {isa = PBXBuildFile; fileRef = C996BFC921E4759000C9D47E /* UILabel+init.m */; };
 		C996BFD621E48E7500C9D47E /* UIView+AZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C996BFD521E48E7500C9D47E /* UIView+AZGradient.m */; };
+		C9CF17C4222F5EB3009157FE /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17C3222F5EB3009157FE /* BaseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,8 @@
 		C996BFC921E4759000C9D47E /* UILabel+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+init.m"; sourceTree = "<group>"; };
 		C996BFD421E48E7500C9D47E /* UIView+AZGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AZGradient.h"; sourceTree = "<group>"; };
 		C996BFD521E48E7500C9D47E /* UIView+AZGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AZGradient.m"; sourceTree = "<group>"; };
+		C9CF17C2222F5EB3009157FE /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		C9CF17C3222F5EB3009157FE /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +346,8 @@
 				BFD2E2F421A6A55E009BA11A /* AppDelegate.m */,
 				BFD2E2F621A6A55E009BA11A /* ViewController.h */,
 				BFD2E2F721A6A55E009BA11A /* ViewController.m */,
+				C9CF17C2222F5EB3009157FE /* BaseController.h */,
+				C9CF17C3222F5EB3009157FE /* BaseController.m */,
 				C95FA673222CC704009AD188 /* DemoBaseController.h */,
 				C95FA674222CC704009AD188 /* DemoBaseController.m */,
 				C95FA675222CC704009AD188 /* DemoBaseController.xib */,
@@ -973,6 +978,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD2E3B821A6A57E009BA11A /* CPXNetworkManager.m in Sources */,
+				C9CF17C4222F5EB3009157FE /* BaseController.m in Sources */,
 				BF11C95021D5D0D60084022D /* NSString+AttributedString.m in Sources */,
 				BFD2E3D321A6A57E009BA11A /* UINavigationController+SXFixSpace.m in Sources */,
 				BFD2E3B621A6A57E009BA11A /* CPXBaseModel.m in Sources */,

@@ -35,6 +35,7 @@
     CPXNetworkManagerModel *model = [[CPXNetworkManagerModel alloc] init];
     model.params = para;
     model.urlStr = @"http://api.budejie.com/api/api_open.php";
+    //缓存过期时间
     model.expirationTime = 600.0;
     model.isCache = _cacheState;
     self.netTextView.text = @"";
@@ -69,7 +70,7 @@
         responseCache这个block的回调里面不做缓存数据的处理
         缓存数据在网络请求帮助类CPXNetworkManager里面进行处理，详情请command点击进入
      */
-    [CPXNetworkManager CPXRequestWithNetworkModel:model responseCache:^(id  _Nonnull responseCache) {
+    [CPXBaseNetworkManager CPXRequestWithNetworkModel:model responseCache:^(id  _Nonnull responseCache) {
         
     } success:^(id  _Nonnull responseObject) {
         [self dealNetData:responseObject];
@@ -80,7 +81,7 @@
 
 //网络请求 （不带缓存）
 - (void)requestNetdataWithModel:(CPXNetworkManagerModel *)model {
-    [CPXNetworkManager CPXRequestWithNetworkModel:model success:^(id  _Nonnull responseObject) {
+    [CPXBaseNetworkManager CPXRequestWithNetworkModel:model success:^(id  _Nonnull responseObject) {
         [self dealNetData:responseObject];
     } failure:^(NSError * _Nonnull error) {
 
