@@ -73,11 +73,8 @@
 		BFD2E3DC21A6A57E009BA11A /* UIViewController+Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E3A621A6A57E009BA11A /* UIViewController+Basic.m */; };
 		BFD2E3DD21A6A57E009BA11A /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E3AB21A6A57E009BA11A /* NSArray+log.m */; };
 		BFD2E3DE21A6A57E009BA11A /* NSArray+Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E3AC21A6A57E009BA11A /* NSArray+Basic.m */; };
-		C95FA676222CC704009AD188 /* DemoBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95FA674222CC704009AD188 /* DemoBaseController.m */; };
-		C95FA677222CC704009AD188 /* DemoBaseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95FA675222CC704009AD188 /* DemoBaseController.xib */; };
 		C996BFCA21E4759000C9D47E /* UILabel+init.m in Sources */ = {isa = PBXBuildFile; fileRef = C996BFC921E4759000C9D47E /* UILabel+init.m */; };
 		C996BFD621E48E7500C9D47E /* UIView+AZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C996BFD521E48E7500C9D47E /* UIView+AZGradient.m */; };
-		C9CF17C4222F5EB3009157FE /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17C3222F5EB3009157FE /* BaseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,15 +236,10 @@
 		BFD2E3AA21A6A57E009BA11A /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
 		BFD2E3AB21A6A57E009BA11A /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
 		BFD2E3AC21A6A57E009BA11A /* NSArray+Basic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Basic.m"; sourceTree = "<group>"; };
-		C95FA673222CC704009AD188 /* DemoBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoBaseController.h; sourceTree = "<group>"; };
-		C95FA674222CC704009AD188 /* DemoBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoBaseController.m; sourceTree = "<group>"; };
-		C95FA675222CC704009AD188 /* DemoBaseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoBaseController.xib; sourceTree = "<group>"; };
 		C996BFC821E4759000C9D47E /* UILabel+init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+init.h"; sourceTree = "<group>"; };
 		C996BFC921E4759000C9D47E /* UILabel+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+init.m"; sourceTree = "<group>"; };
 		C996BFD421E48E7500C9D47E /* UIView+AZGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AZGradient.h"; sourceTree = "<group>"; };
 		C996BFD521E48E7500C9D47E /* UIView+AZGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AZGradient.m"; sourceTree = "<group>"; };
-		C9CF17C2222F5EB3009157FE /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
-		C9CF17C3222F5EB3009157FE /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,11 +338,6 @@
 				BFD2E2F421A6A55E009BA11A /* AppDelegate.m */,
 				BFD2E2F621A6A55E009BA11A /* ViewController.h */,
 				BFD2E2F721A6A55E009BA11A /* ViewController.m */,
-				C9CF17C2222F5EB3009157FE /* BaseController.h */,
-				C9CF17C3222F5EB3009157FE /* BaseController.m */,
-				C95FA673222CC704009AD188 /* DemoBaseController.h */,
-				C95FA674222CC704009AD188 /* DemoBaseController.m */,
-				C95FA675222CC704009AD188 /* DemoBaseController.xib */,
 				BFD2E2F921A6A55E009BA11A /* Main.storyboard */,
 				BFD2E2FC21A6A55F009BA11A /* Assets.xcassets */,
 				BFD2E2FE21A6A55F009BA11A /* LaunchScreen.storyboard */,
@@ -882,7 +869,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD2E30021A6A55F009BA11A /* LaunchScreen.storyboard in Resources */,
-				C95FA677222CC704009AD188 /* DemoBaseController.xib in Resources */,
 				BFD2E3C321A6A57E009BA11A /* MBProgressHUD.bundle in Resources */,
 				BFD2E2FD21A6A55F009BA11A /* Assets.xcassets in Resources */,
 				BFD2E2FB21A6A55E009BA11A /* Main.storyboard in Resources */,
@@ -978,7 +964,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD2E3B821A6A57E009BA11A /* CPXNetworkManager.m in Sources */,
-				C9CF17C4222F5EB3009157FE /* BaseController.m in Sources */,
 				BF11C95021D5D0D60084022D /* NSString+AttributedString.m in Sources */,
 				BFD2E3D321A6A57E009BA11A /* UINavigationController+SXFixSpace.m in Sources */,
 				BFD2E3B621A6A57E009BA11A /* CPXBaseModel.m in Sources */,
@@ -1003,7 +988,6 @@
 				BFD2E3DB21A6A57E009BA11A /* NSString+STRegex.m in Sources */,
 				BFD2E3DE21A6A57E009BA11A /* NSArray+Basic.m in Sources */,
 				BFD2E3B521A6A57E009BA11A /* CPXBaseTabBarController.m in Sources */,
-				C95FA676222CC704009AD188 /* DemoBaseController.m in Sources */,
 				BFD2E3C821A6A57E009BA11A /* NSDictionary+log.m in Sources */,
 				BFD2E3DD21A6A57E009BA11A /* NSArray+log.m in Sources */,
 				BFD2E3BF21A6A57E009BA11A /* GraphicTool.m in Sources */,

@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  FunctionDemo
+//
+//  Created by CPX_22 on 2019/3/6.
+//  Copyright © 2019 CPX_22. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "BaseLib.h"
+
+#endif /* PrefixHeader_pch */
