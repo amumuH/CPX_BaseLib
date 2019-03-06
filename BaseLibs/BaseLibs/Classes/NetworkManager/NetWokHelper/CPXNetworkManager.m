@@ -26,10 +26,8 @@
         网络框架缓存逻辑
         通过Model里面的参数来控制
         1 首先判断缓存时间是否过期并且responseCaches不为空（调用该方法则不为空）
-    
+        2 所有的缓存数据都是通过success这个Block进行回调传值（通过判断缓存时间是否过期并且是否有网来进行数据读取回调）
      */
-    
-    
     
     //判断缓存是否过期 NO 有效 YES 无效  （并判断是否为主动刷新数据）
     BOOL isExpired = [self isExpiredWithModel:model];
