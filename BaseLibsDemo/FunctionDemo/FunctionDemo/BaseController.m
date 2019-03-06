@@ -28,12 +28,10 @@
     [self.titleArray addObjectsFromArray:array];
 }
 
-- (void)configTable {
-
-    self.tableView = [[CPXBaseTableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
+- (void)configTable {  
+    [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.view addSubview:self.tableView];
 }
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource
