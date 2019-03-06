@@ -127,7 +127,7 @@ static CGFloat kReadEverySecond = 10;   // 每秒读
     hud.contentColor = [UIColor whiteColor];
     hud.bezelView.color = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
-    hud.userInteractionEnabled = NO;    // 即在展示的同时,用户是否能点击其他区域进行交互
+    hud.userInteractionEnabled = YES;    // 即在展示的同时,用户是否能点击其他区域进行交互
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, dura * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         [hud hideAnimated:YES];

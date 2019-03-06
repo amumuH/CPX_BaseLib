@@ -8,6 +8,7 @@
 
 #import "BaseController.h"
 #import "DemoBaseController.h"
+#import "TipViewController.h"
 
 @interface BaseController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) NSMutableArray *titleArray;
@@ -24,7 +25,7 @@
 }
 
 - (void)configData {
-    NSArray *array = [NSArray arrayWithObjects:@"网络缓存",@"test",@"test",nil];
+    NSArray *array = [NSArray arrayWithObjects:@"网络缓存",@"各种提示框",@"test",nil];
     [self.titleArray addObjectsFromArray:array];
 }
 
@@ -57,10 +58,15 @@
 
 
 - (void)chooseFunctionType:(NSInteger)type {
+    UIViewController *vc;
     switch (type) {
         case 0:{
-            DemoBaseController *vc = [[DemoBaseController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+             vc = [[DemoBaseController alloc] init];
+        }
+            
+            break;
+        case 1:{
+            vc = [[TipViewController alloc] init];
         }
             
             break;
@@ -68,6 +74,9 @@
         default:
             break;
     }
+    vc.navigationItem.title =self.titleArray[type];
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 

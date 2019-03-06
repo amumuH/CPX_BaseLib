@@ -91,8 +91,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "BaseLibs/Classes/*.{h,m}", "BaseLibs/Classes/**/*.{h,m}","BaseLibs/Classes/**/**/*.{h,m}","BaseLibs/Classes/**/**/**/*.{h,m}","BaseLibs/Classes/**/**/**/**/*.{h,m}"
   s.exclude_files = "BaseLibs/Exclude"
-   s.prefix_header_file = "BaseLibs/Classes/Configration/GlobalPCH.pch"
-
+  s.prefix_header_file = "BaseLibs/Classes/Configration/GlobalPCH.pch"
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -106,7 +105,7 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-  s.resources = "BaseLibs/**/**/*.xib","BaseLibs/**/**/**/*.xib","BaseLibs/**/**/**/**/*.xib","BaseLibs/3rdParty/**/*.bundle"
+  s.resources = "BaseLibs/**/**/*.xib","BaseLibs/**/**/**/*.xib","BaseLibs/**/**/**/**/*.xib","BaseLibs/Classes/3rdParty/**/*.bundle","BaseLibs/Classes/Utls/AlertUtls/**/*.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
