@@ -24,9 +24,9 @@
 	 	-(CPXBaseViewController*)getViewcontrollerView获取当前的		父控制器
 	
 ### BaseVC 
-	 CPXBaseNavigationController 基类UINavigationController控制器
-	 CPXBaseTabBarController 基类UITabBarController控制器
-	 CPXBaseViewController 用于自定义控制器的所有父类
+	 CPXBaseNavigationController 				基类UINavigationController控制器
+	 CPXBaseTabBarController 				基类UITabBarController控制器
+	 CPXBaseViewController 					用于自定义控制器的所有父类
 	 
  	 CPXDataViewController CPXBaseViewController的父类
  	 	内部常用属性
