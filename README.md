@@ -74,6 +74,22 @@
 	NSArray+Basic.h					处理不安全数组
 	NSObject+Basic.h					数据持久化（单列存储）
 	
-
-	 
-	 
+	
+### Extensions
+	UIViewExt.h						用于调取UIView的坐标
+	ColorEx.h							用于扩展颜色的功能
+	HJCornerRadius.h					用于高效设置imageView的圆角，避免maskTobounds
+	
+### NetworkManager
+	CPXNetCofig.h						网络层宏文件
+	CPXNetworkCache.h				网络层数据缓存类
+	CPXBaseNetworkManager.h			Base网络请求Manger（主要处理一些试图交互逻辑的处理）,继承于CPXNetworkManager
+	CPXNetworkManager.h 			网络请求，主要处理缓存以及过期问题。对各种请求方法的整合,继承于CPXNetworkHelper
+	CPXNetworkHelper.h				用于封装AFN
+	
+### ThirdPart
+	DYModelMaker						字典自动生成模型类：支持多层模型嵌套、自动生成两种框架（MJExtension和YYModel）的系统关键字替换和数组中字典转模型代码
+	
+### Utls
+	CPXAlertUtils.h					MBProgressHUD的封装类
+	CommonUtls.h						公用的一些工具：获取当前控制器、快速创建model属性（快速创建网络请求返回的字典的属性）、调起相册或相机进行图片选择等
