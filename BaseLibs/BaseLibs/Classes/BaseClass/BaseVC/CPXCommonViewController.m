@@ -28,10 +28,9 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.navBarTintColor = [UIColor redColor];
     [self setStatusBarLight:self.statusBarIsLight animate:NO];//改变状态栏颜色
-    if (self.navBarBgAlpha == 0) {
-        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    }
+   
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
@@ -75,7 +74,6 @@
 
 - (void)initDefaultNavigation{
     self.navBarBgAlpha = 1;//设置导航栏透明度
-    self.navBarTintColor = [UIColor redColor];
     self.navigationController.navigationBar.shadowImage = [UIImage new];//去除导航栏下方阴影
 }
 

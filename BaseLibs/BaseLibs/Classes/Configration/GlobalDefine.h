@@ -11,10 +11,10 @@
 
 
 #define Empty_Title @"It's Empty"         //常规占位图标题
-#define Empty_Image @"HM_img_No_content"        //常规占位图图片
+#define Empty_Image @"img_无订单"        //常规占位图图片
 
 #define NetError_Title @"网络异常,请稍后再试"   //网络异常占位图标题
-#define NetErro_Image @"img_no_internet"           //网络异常占位图图片
+#define NetErro_Image @"网络错误"           //网络异常占位图图片
 
 #define loading_ImageName @"image_place_holder"           //加载图片占位图
 

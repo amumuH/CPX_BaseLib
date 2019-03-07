@@ -48,9 +48,9 @@
     switch (type) {
         case FOREmptyAssistantTypeNormal:
             {
-//                NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:16.0],NSForegroundColorAttributeName: [UIColor lightGrayColor]};
-//                            //常规的
-//                configer.titleAttributedStr =  [[NSAttributedString alloc] initWithString:Empty_Title attributes:attributes];
+                NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:16.0],NSForegroundColorAttributeName: [UIColor lightGrayColor]};
+                            //常规的
+                configer.titleAttributedStr =  [[NSAttributedString alloc] initWithString:Empty_Title attributes:attributes];
                 configer.emptyImage = [UIImage imageNamed:Empty_Image];//空图片
                 configer.emptyVerticalOffset = -AUTO_HEIGTH_BASE_IPHONE_6(0);
             }
@@ -58,12 +58,11 @@
         case FOREmptyAssistantTypeNetError:
         {
             //网络异常
-//            configer.emptyTitle = NetError_Title;
+            configer.emptyTitle = NetError_Title;
             configer.emptyImage = [UIImage imageNamed:NetErro_Image];
             configer.emptyBtnTitle = @"Try Again";
-            configer.emptyBtnTitleColor = [UIColor whiteColor];
-            configer.emptyBtnBackgroundImage = [UIImage cpx_imageWithColor:HEX(@"8B63FF")];
-            configer.emptyBtntitleFont = [UIFont systemFontOfSize:16];
+            configer.emptyBtnTitleColor = [UIColor redColor];
+            configer.emptyBtntitleFont = [UIFont systemFontOfSize:20];
         }
             break;
         default:

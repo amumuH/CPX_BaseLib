@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>959403501172-esjgjop8d2q4jl5pa7lbt1uerm41q10b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.959403501172-esjgjop8d2q4jl5pa7lbt1uerm41q10b</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>959403501172-1tjl6rb6f3299hr90m6rlbve0qds1lgm.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCzjffACwWs8EzQCRibNAN9PL4Fv3wPKXY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>959403501172</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mobilecpx.zhuawawatemp</string>
+	<key>PROJECT_ID</key>
+	<string>prize-claw-carnival</string>
+	<key>STORAGE_BUCKET</key>
+	<string>prize-claw-carnival.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:959403501172:ios:f90446fccc7b2b7a</string>
+	<key>DATABASE_URL</key>
+	<string>https://prize-claw-carnival.firebaseio.com</string>
+</dict>
+</plist>

@@ -9,6 +9,9 @@
 #import "BaseController.h"
 #import "DemoBaseController.h"
 #import "TipViewController.h"
+#import "MainViewController.h"
+#import "NaviDemoViewController.h"
+#import "LoginShareViewController.h"
 
 @interface BaseController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) NSMutableArray *titleArray;
@@ -26,7 +29,7 @@
 }
 
 - (void)configData {
-    NSArray *array = [NSArray arrayWithObjects:@"网络缓存",@"各种提示框",@"test",nil];
+    NSArray *array = [NSArray arrayWithObjects:@"网络缓存",@"各种提示框",@"空白试图占位图",@"导航栏的处理",@"三方登录与分享",nil];
     [self.titleArray addObjectsFromArray:array];
 }
 
@@ -71,6 +74,18 @@
         }
             
             break;
+        case 2:{
+            vc = [[MainViewController alloc] init];
+        }
+            
+            break;
+        case 3:{
+            vc = [[NaviDemoViewController alloc]init];
+        }
+            break;
+        case 4:{
+            vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"LoginShareViewController"];
+        }
             
         default:
             break;

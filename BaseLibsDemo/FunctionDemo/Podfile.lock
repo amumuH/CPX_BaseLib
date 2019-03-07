@@ -39,6 +39,21 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
+  - mob_sharesdk (4.2.1):
+    - mob_sharesdk/ShareSDK (= 4.2.1)
+    - MOBFoundation
+  - mob_sharesdk/ShareSDK (4.2.1):
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/Facebook (4.2.1):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/GooglePlus (4.2.1):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/Twitter (4.2.1):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - MOBFoundation (3.2.0)
   - PYPhotoBrowser (1.5.6):
     - DACircularProgress
     - MBProgressHUD
@@ -56,6 +71,10 @@ PODS:
 
 DEPENDENCIES:
   - BaseLibs (from `../../BaseLibs`)
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKPlatforms/Facebook
+  - mob_sharesdk/ShareSDKPlatforms/GooglePlus
+  - mob_sharesdk/ShareSDKPlatforms/Twitter
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -71,6 +90,8 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - mob_sharesdk
+    - MOBFoundation
     - PYPhotoBrowser
     - SDWebImage
     - YYCache
@@ -94,11 +115,13 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  mob_sharesdk: e6a6f9b2b6edc29af57c31756a7f0b4143cba50c
+  MOBFoundation: ca11e6640e995875ff755faa56ea324eed260e70
   PYPhotoBrowser: 74f6526b290069a55943ed92e5a21f84c6d90ecf
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   ZLPhotoBrowser: 6dfadc4706429424f0a851fe40752aff076689ab
 
-PODFILE CHECKSUM: 38a1d91a58574689bdb4a737f0037ead37c12a46
+PODFILE CHECKSUM: 436431e6459c1fa713c599f85cfb3b8b19b10f67
 
 COCOAPODS: 1.5.3

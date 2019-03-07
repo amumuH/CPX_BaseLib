@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		9C054318ECAF04BD8EB755F4 /* libPods-FunctionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC62DACDCC011E1C98DB49A0 /* libPods-FunctionDemo.a */; };
 		BF5A9940222F8D4D00A8D042 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A993F222F8D4D00A8D042 /* TipViewController.m */; };
+		BF5A9944222FA3AD00A8D042 /* YZBottomSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9943222FA3AD00A8D042 /* YZBottomSelectView.m */; };
+		BF5A9951222FA50600A8D042 /* YBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A994F222FA50600A8D042 /* YBViewController.m */; };
+		BF5A9955222FA54F00A8D042 /* CustomTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9952222FA54F00A8D042 /* CustomTestCell.m */; };
+		BF5A9956222FA54F00A8D042 /* CustomTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5A9953222FA54F00A8D042 /* CustomTestCell.xib */; };
+		BF5A995E222FA57B00A8D042 /* YBRectConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9959222FA57A00A8D042 /* YBRectConst.m */; };
+		BF5A995F222FA57B00A8D042 /* YBPopupMenuPath.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A995A222FA57A00A8D042 /* YBPopupMenuPath.m */; };
+		BF5A9960222FA57B00A8D042 /* YBPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A995C222FA57A00A8D042 /* YBPopupMenu.m */; };
+		BF5A9973222FB11300A8D042 /* applications.json in Resources */ = {isa = PBXBuildFile; fileRef = BF5A9965222FB11100A8D042 /* applications.json */; };
+		BF5A9974222FB11300A8D042 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9966222FB11200A8D042 /* DetailViewController.m */; };
+		BF5A9975222FB11300A8D042 /* UIColor+Hexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9968222FB11200A8D042 /* UIColor+Hexadecimal.m */; };
+		BF5A9976222FB11300A8D042 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9969222FB11200A8D042 /* MainViewController.m */; };
+		BF5A9977222FB11300A8D042 /* IdealSans-Book-Pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF5A996E222FB11300A8D042 /* IdealSans-Book-Pro.otf */; };
+		BF5A9978222FB11300A8D042 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF5A9970222FB11300A8D042 /* Lato-Regular.ttf */; };
+		BF5A9979222FB11300A8D042 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9971222FB11300A8D042 /* Application.m */; };
+		BF5A997E222FB4E000A8D042 /* EmptyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A997D222FB4E000A8D042 /* EmptyTestViewController.m */; };
+		BF5A9982222FB96100A8D042 /* NaviDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9981222FB96100A8D042 /* NaviDemoViewController.m */; };
+		BF5A9986222FC1A400A8D042 /* LoginShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9985222FC1A400A8D042 /* LoginShareViewController.m */; };
+		BF5A9988222FC2AE00A8D042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF5A9987222FC2AE00A8D042 /* GoogleService-Info.plist */; };
 		C9CF17D3222F675E009157FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17D2222F675E009157FE /* AppDelegate.m */; };
 		C9CF17D6222F675E009157FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17D5222F675E009157FE /* ViewController.m */; };
 		C9CF17D9222F675E009157FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CF17D7222F675E009157FE /* Main.storyboard */; };
@@ -26,6 +44,37 @@
 		545116C2D500A3DBD5E5CB8A /* Pods-FunctionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionDemo/Pods-FunctionDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BF5A993E222F8D4D00A8D042 /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		BF5A993F222F8D4D00A8D042 /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		BF5A9942222FA3AD00A8D042 /* YZBottomSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZBottomSelectView.h; sourceTree = "<group>"; };
+		BF5A9943222FA3AD00A8D042 /* YZBottomSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZBottomSelectView.m; sourceTree = "<group>"; };
+		BF5A994F222FA50600A8D042 /* YBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBViewController.m; sourceTree = "<group>"; };
+		BF5A9950222FA50600A8D042 /* YBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBViewController.h; sourceTree = "<group>"; };
+		BF5A9952222FA54F00A8D042 /* CustomTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTestCell.m; sourceTree = "<group>"; };
+		BF5A9953222FA54F00A8D042 /* CustomTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTestCell.xib; sourceTree = "<group>"; };
+		BF5A9954222FA54F00A8D042 /* CustomTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTestCell.h; sourceTree = "<group>"; };
+		BF5A9958222FA57A00A8D042 /* YBPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPopupMenu.h; sourceTree = "<group>"; };
+		BF5A9959222FA57A00A8D042 /* YBRectConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBRectConst.m; sourceTree = "<group>"; };
+		BF5A995A222FA57A00A8D042 /* YBPopupMenuPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPopupMenuPath.m; sourceTree = "<group>"; };
+		BF5A995B222FA57A00A8D042 /* YBRectConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBRectConst.h; sourceTree = "<group>"; };
+		BF5A995C222FA57A00A8D042 /* YBPopupMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPopupMenu.m; sourceTree = "<group>"; };
+		BF5A995D222FA57A00A8D042 /* YBPopupMenuPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPopupMenuPath.h; sourceTree = "<group>"; };
+		BF5A9965222FB11100A8D042 /* applications.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = applications.json; sourceTree = "<group>"; };
+		BF5A9966222FB11200A8D042 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BF5A9967222FB11200A8D042 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		BF5A9968222FB11200A8D042 /* UIColor+Hexadecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hexadecimal.m"; sourceTree = "<group>"; };
+		BF5A9969222FB11200A8D042 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BF5A996A222FB11200A8D042 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BF5A996B222FB11300A8D042 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BF5A996E222FB11300A8D042 /* IdealSans-Book-Pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IdealSans-Book-Pro.otf"; sourceTree = "<group>"; };
+		BF5A9970222FB11300A8D042 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		BF5A9971222FB11300A8D042 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		BF5A9972222FB11300A8D042 /* UIColor+Hexadecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hexadecimal.h"; sourceTree = "<group>"; };
+		BF5A997C222FB4E000A8D042 /* EmptyTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyTestViewController.h; sourceTree = "<group>"; };
+		BF5A997D222FB4E000A8D042 /* EmptyTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyTestViewController.m; sourceTree = "<group>"; };
+		BF5A9980222FB96100A8D042 /* NaviDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaviDemoViewController.h; sourceTree = "<group>"; };
+		BF5A9981222FB96100A8D042 /* NaviDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaviDemoViewController.m; sourceTree = "<group>"; };
+		BF5A9984222FC1A400A8D042 /* LoginShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginShareViewController.h; sourceTree = "<group>"; };
+		BF5A9985222FC1A400A8D042 /* LoginShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginShareViewController.m; sourceTree = "<group>"; };
+		BF5A9987222FC2AE00A8D042 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9CF17CE222F675E009157FE /* FunctionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF17D1222F675E009157FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9CF17D2222F675E009157FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,10 +110,117 @@
 		BF5A993D222F79D400A8D042 /* 提示框 */ = {
 			isa = PBXGroup;
 			children = (
+				BF5A997B222FB4B800A8D042 /* YBPopDemo */,
+				BF5A9941222FA3A200A8D042 /* 底部弹出框 */,
 				BF5A993E222F8D4D00A8D042 /* TipViewController.h */,
 				BF5A993F222F8D4D00A8D042 /* TipViewController.m */,
 			);
 			path = "提示框";
+			sourceTree = "<group>";
+		};
+		BF5A9941222FA3A200A8D042 /* 底部弹出框 */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A9942222FA3AD00A8D042 /* YZBottomSelectView.h */,
+				BF5A9943222FA3AD00A8D042 /* YZBottomSelectView.m */,
+			);
+			path = "底部弹出框";
+			sourceTree = "<group>";
+		};
+		BF5A9957222FA57A00A8D042 /* YBPopupMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A9958222FA57A00A8D042 /* YBPopupMenu.h */,
+				BF5A9959222FA57A00A8D042 /* YBRectConst.m */,
+				BF5A995A222FA57A00A8D042 /* YBPopupMenuPath.m */,
+				BF5A995B222FA57A00A8D042 /* YBRectConst.h */,
+				BF5A995C222FA57A00A8D042 /* YBPopupMenu.m */,
+				BF5A995D222FA57A00A8D042 /* YBPopupMenuPath.h */,
+			);
+			path = YBPopupMenu;
+			sourceTree = "<group>";
+		};
+		BF5A9961222FAF4E00A8D042 /* 占位图 */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A997A222FB4A600A8D042 /* 三方demo */,
+				BF5A997C222FB4E000A8D042 /* EmptyTestViewController.h */,
+				BF5A997D222FB4E000A8D042 /* EmptyTestViewController.m */,
+			);
+			path = "占位图";
+			sourceTree = "<group>";
+		};
+		BF5A996C222FB11300A8D042 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A996D222FB11300A8D042 /* Ideal Sans */,
+				BF5A996F222FB11300A8D042 /* Lato */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BF5A996D222FB11300A8D042 /* Ideal Sans */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A996E222FB11300A8D042 /* IdealSans-Book-Pro.otf */,
+			);
+			path = "Ideal Sans";
+			sourceTree = "<group>";
+		};
+		BF5A996F222FB11300A8D042 /* Lato */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A9970222FB11300A8D042 /* Lato-Regular.ttf */,
+			);
+			path = Lato;
+			sourceTree = "<group>";
+		};
+		BF5A997A222FB4A600A8D042 /* 三方demo */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A996C222FB11300A8D042 /* Fonts */,
+				BF5A9967222FB11200A8D042 /* Application.h */,
+				BF5A9971222FB11300A8D042 /* Application.m */,
+				BF5A9965222FB11100A8D042 /* applications.json */,
+				BF5A996B222FB11300A8D042 /* DetailViewController.h */,
+				BF5A9966222FB11200A8D042 /* DetailViewController.m */,
+				BF5A996A222FB11200A8D042 /* MainViewController.h */,
+				BF5A9969222FB11200A8D042 /* MainViewController.m */,
+				BF5A9972222FB11300A8D042 /* UIColor+Hexadecimal.h */,
+				BF5A9968222FB11200A8D042 /* UIColor+Hexadecimal.m */,
+			);
+			path = "三方demo";
+			sourceTree = "<group>";
+		};
+		BF5A997B222FB4B800A8D042 /* YBPopDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A9957222FA57A00A8D042 /* YBPopupMenu */,
+				BF5A9950222FA50600A8D042 /* YBViewController.h */,
+				BF5A994F222FA50600A8D042 /* YBViewController.m */,
+				BF5A9954222FA54F00A8D042 /* CustomTestCell.h */,
+				BF5A9952222FA54F00A8D042 /* CustomTestCell.m */,
+				BF5A9953222FA54F00A8D042 /* CustomTestCell.xib */,
+			);
+			path = YBPopDemo;
+			sourceTree = "<group>";
+		};
+		BF5A997F222FB95100A8D042 /* 导航栏demo */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A9980222FB96100A8D042 /* NaviDemoViewController.h */,
+				BF5A9981222FB96100A8D042 /* NaviDemoViewController.m */,
+			);
+			path = "导航栏demo";
+			sourceTree = "<group>";
+		};
+		BF5A9983222FC17700A8D042 /* 三方分享与登录 */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A9984222FC1A400A8D042 /* LoginShareViewController.h */,
+				BF5A9985222FC1A400A8D042 /* LoginShareViewController.m */,
+			);
+			path = "三方分享与登录";
 			sourceTree = "<group>";
 		};
 		C1A13A27468EF57D9D260E73 /* Pods */ = {
@@ -97,6 +253,9 @@
 		C9CF17D0222F675E009157FE /* FunctionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BF5A9983222FC17700A8D042 /* 三方分享与登录 */,
+				BF5A997F222FB95100A8D042 /* 导航栏demo */,
+				BF5A9961222FAF4E00A8D042 /* 占位图 */,
 				BF5A993D222F79D400A8D042 /* 提示框 */,
 				C9CF17F3222F6CA9009157FE /* 网络请求 */,
 				C9CF17EB222F69FD009157FE /* BaseController.h */,
@@ -109,6 +268,7 @@
 				C9CF17DD222F675F009157FE /* Assets.xcassets */,
 				C9CF17DF222F675F009157FE /* LaunchScreen.storyboard */,
 				C9CF17E2222F675F009157FE /* Info.plist */,
+				BF5A9987222FC2AE00A8D042 /* GoogleService-Info.plist */,
 				C9CF17E3222F675F009157FE /* main.m */,
 				C9CF17DA222F675E009157FE /* FunctionDemo.xcdatamodeld */,
 				C9CF17F2222F6AB7009157FE /* PrefixHeader.pch */,
@@ -195,7 +355,12 @@
 			files = (
 				C9CF17E1222F675F009157FE /* LaunchScreen.storyboard in Resources */,
 				C9CF17DE222F675F009157FE /* Assets.xcassets in Resources */,
+				BF5A9988222FC2AE00A8D042 /* GoogleService-Info.plist in Resources */,
+				BF5A9956222FA54F00A8D042 /* CustomTestCell.xib in Resources */,
+				BF5A9978222FB11300A8D042 /* Lato-Regular.ttf in Resources */,
 				C9CF17D9222F675E009157FE /* Main.storyboard in Resources */,
+				BF5A9977222FB11300A8D042 /* IdealSans-Book-Pro.otf in Resources */,
+				BF5A9973222FB11300A8D042 /* applications.json in Resources */,
 				C9CF17F1222F69FD009157FE /* DemoBaseController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +412,7 @@
 				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoActionSheet.xib",
 				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowserCell.xib",
 				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowser.bundle",
+				"${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/Required/ShareSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -265,6 +431,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZLPhotoActionSheet.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZLPhotoBrowserCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZLPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -278,12 +445,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5A9979222FB11300A8D042 /* Application.m in Sources */,
+				BF5A995E222FA57B00A8D042 /* YBRectConst.m in Sources */,
+				BF5A995F222FA57B00A8D042 /* YBPopupMenuPath.m in Sources */,
 				C9CF17DC222F675E009157FE /* FunctionDemo.xcdatamodeld in Sources */,
 				C9CF17EF222F69FD009157FE /* BaseController.m in Sources */,
+				BF5A9974222FB11300A8D042 /* DetailViewController.m in Sources */,
+				BF5A997E222FB4E000A8D042 /* EmptyTestViewController.m in Sources */,
+				BF5A9944222FA3AD00A8D042 /* YZBottomSelectView.m in Sources */,
+				BF5A9976222FB11300A8D042 /* MainViewController.m in Sources */,
 				C9CF17D6222F675E009157FE /* ViewController.m in Sources */,
 				C9CF17E4222F675F009157FE /* main.m in Sources */,
+				BF5A9951222FA50600A8D042 /* YBViewController.m in Sources */,
 				C9CF17D3222F675E009157FE /* AppDelegate.m in Sources */,
+				BF5A9955222FA54F00A8D042 /* CustomTestCell.m in Sources */,
+				BF5A9982222FB96100A8D042 /* NaviDemoViewController.m in Sources */,
 				BF5A9940222F8D4D00A8D042 /* TipViewController.m in Sources */,
+				BF5A9986222FC1A400A8D042 /* LoginShareViewController.m in Sources */,
+				BF5A9975222FB11300A8D042 /* UIColor+Hexadecimal.m in Sources */,
+				BF5A9960222FA57B00A8D042 /* YBPopupMenu.m in Sources */,
 				C9CF17F0222F69FD009157FE /* DemoBaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
