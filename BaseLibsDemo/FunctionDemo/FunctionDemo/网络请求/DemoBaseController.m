@@ -7,7 +7,7 @@
 //
 
 #import "DemoBaseController.h"
-
+#import "DownViewController.h"
 @interface DemoBaseController ()
 {
     BOOL _cacheState;//网络缓存开关状态
@@ -26,7 +26,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem cpx_itemWithTarget:self action:@selector(respotoRight) title:@"断点下载"];
 }
+-(void)respotoRight{
+    DownViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"DownViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 #pragma mark - button action
 //网络请求事件
@@ -70,7 +76,8 @@
         responseCache这个block的回调里面不做缓存数据的处理
         缓存数据在网络请求帮助类CPXNetworkManager里面进行处理，详情请command点击进入
      */
-    [CPXBaseNetworkManager CPXRequestWithNetworkModel:model responseCache:^(id  _Nonnull responseCache) {
+
+    [CPXBaseNetworkManager CPXBaseRequestWithNetworkModel:model responseCache:^(id  _Nonnull responseCache) {
         
     } success:^(id  _Nonnull responseObject) {
         [self dealNetData:responseObject];
@@ -81,7 +88,7 @@
 
 //网络请求 （不带缓存）
 - (void)requestNetdataWithModel:(CPXNetworkManagerModel *)model {
-    [CPXBaseNetworkManager CPXRequestWithNetworkModel:model success:^(id  _Nonnull responseObject) {
+    [CPXBaseNetworkManager CPXBaseRequestWithNetworkModel:model success:^(id  _Nonnull responseObject) {
         [self dealNetData:responseObject];
     } failure:^(NSError * _Nonnull error) {
 

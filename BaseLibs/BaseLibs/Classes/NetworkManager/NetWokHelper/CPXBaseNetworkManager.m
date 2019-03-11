@@ -43,7 +43,8 @@
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     }
     __weak typeof(self)weakSelf = self;
-    [self CPXRequestWithNetworkModel:model responseCache:responseCache success:^(id  _Nonnull responseObject) {
+    [CPXBaseNetworkManager setValue:@"9" forHTTPHeaderField:@"fromType"];
+    [self RequestWithNetworkModel:model responseCache:responseCache success:^(id  _Nonnull responseObject) {
         success(responseObject);
         [weakSelf stopNetWModel:model];
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "CPXNetworkCache.h"
+#import "CPXServerDownLoadTool.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -330,7 +331,7 @@ typedef void(^CPXNetworkStatus)(CPXNetworkStatusType status);
                                            failure:(CPXHttpRequestFailed)failure;
 
 /**
- *  下载文件
+ *  下载文件(不支持断点下载)
  *
  *  @param URL      请求地址
  *  @param fileDir  文件存储目录(默认存储目录为Download)
@@ -345,6 +346,23 @@ typedef void(^CPXNetworkStatus)(CPXNetworkStatusType status);
                                       progress:(CPXHttpProgress)progress
                                        success:(void(^)(NSString *filePath))success
                                        failure:(CPXHttpRequestFailed)failure;
+
+
+/**
+ Description *  下载文件(支持断点下载)
+
+ @param urlHost 请求地址
+ @param progress 文件下载的进度信息
+ @param fileDir 文件存储目录(默认存储目录为Download)
+ @param success 下载成功的回调(回调参数filePath:文件的路径)
+ @param failure 下载失败的回调
+  @return 返回NSURLSessionDownloadTask实例，可用于暂停继续，暂停调用suspend方法，开始下载调用resume方法
+ */
++ (__kindof NSURLSessionTask *)AFDownLoadFileWithUrl:(NSString*)urlHost
+                                            progress:(DowningProgress)progress
+                                             fileDir:(NSString *)fileDir
+                                             success:(DonwLoadSuccessBlock)success
+                                             failure:(DownLoadfailBlock)failure;
 
 
 

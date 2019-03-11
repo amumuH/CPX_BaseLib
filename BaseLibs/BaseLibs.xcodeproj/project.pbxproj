@@ -17,6 +17,7 @@
 		BF60866B2227AB4A005EA090 /* DYModelMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6086682227AB4A005EA090 /* DYModelMaker.m */; };
 		BF60866E2227ABCE005EA090 /* DYMakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60866C2227ABCD005EA090 /* DYMakeModel.m */; };
 		BFBAC9A921D1D972004CCDC1 /* NSObject+Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBAC9A821D1D972004CCDC1 /* NSObject+Basic.m */; };
+		BFCA6ADA2230E934004BFB9D /* CPXServerDownLoadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA6AD82230E933004BFB9D /* CPXServerDownLoadTool.m */; };
 		BFD2E2F521A6A55E009BA11A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E2F421A6A55E009BA11A /* AppDelegate.m */; };
 		BFD2E2F821A6A55E009BA11A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E2F721A6A55E009BA11A /* ViewController.m */; };
 		BFD2E2FB21A6A55E009BA11A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD2E2F921A6A55E009BA11A /* Main.storyboard */; };
@@ -117,6 +118,8 @@
 		BF60866D2227ABCE005EA090 /* DYMakeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMakeModel.h; sourceTree = "<group>"; };
 		BFBAC9A721D1D972004CCDC1 /* NSObject+Basic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Basic.h"; sourceTree = "<group>"; };
 		BFBAC9A821D1D972004CCDC1 /* NSObject+Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Basic.m"; sourceTree = "<group>"; };
+		BFCA6AD82230E933004BFB9D /* CPXServerDownLoadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPXServerDownLoadTool.m; sourceTree = "<group>"; };
+		BFCA6AD92230E933004BFB9D /* CPXServerDownLoadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPXServerDownLoadTool.h; sourceTree = "<group>"; };
 		BFD2E2F021A6A55E009BA11A /* BaseLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD2E2F321A6A55E009BA11A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFD2E2F421A6A55E009BA11A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -741,6 +744,8 @@
 				BFD2E34A21A6A57D009BA11A /* CPXNetworkHelper.m */,
 				BFD2E34E21A6A57D009BA11A /* CPXNetworkManager.h */,
 				BFD2E34721A6A57D009BA11A /* CPXNetworkManager.m */,
+				BFCA6AD92230E933004BFB9D /* CPXServerDownLoadTool.h */,
+				BFCA6AD82230E933004BFB9D /* CPXServerDownLoadTool.m */,
 			);
 			path = NetWokHelper;
 			sourceTree = "<group>";
@@ -981,6 +986,7 @@
 				BFD2E3BA21A6A57E009BA11A /* CPXNetworkCache.m in Sources */,
 				BFD2E3D021A6A57E009BA11A /* UINavigationBar+hitedCategory.m in Sources */,
 				BFD2E3B421A6A57E009BA11A /* CPXBaseNavigationController.m in Sources */,
+				BFCA6ADA2230E934004BFB9D /* CPXServerDownLoadTool.m in Sources */,
 				C996BFCA21E4759000C9D47E /* UILabel+init.m in Sources */,
 				BFD2E3DA21A6A57E009BA11A /* NSString+timer.m in Sources */,
 				BFD2E3CF21A6A57E009BA11A /* UINavigationBar+SXFixSpace.m in Sources */,

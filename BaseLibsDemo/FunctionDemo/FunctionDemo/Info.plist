@@ -129,5 +129,11 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>allow the App visit my Camera</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>allow the App visit my photo Library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>allow the App visit my photo Library</string>
 </dict>
 </plist>

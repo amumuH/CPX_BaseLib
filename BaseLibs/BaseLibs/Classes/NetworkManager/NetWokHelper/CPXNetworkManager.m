@@ -12,12 +12,12 @@
 @implementation CPXNetworkManager
 
 
-+ (void)CPXRequestWithNetworkModel:(CPXNetworkManagerModel *)model success:(CPXHttpRequestSuccess)success failure:(CPXHttpRequestFailed)failure {
++ (void)RequestWithNetworkModel:(CPXNetworkManagerModel *)model success:(CPXHttpRequestSuccess)success failure:(CPXHttpRequestFailed)failure {
 
-    [self CPXRequestWithNetworkModel:model responseCache:nil success:success failure:failure];
+    [self RequestWithNetworkModel:model responseCache:nil success:success failure:failure];
 }
 
-+ (void)CPXRequestWithNetworkModel:(CPXNetworkManagerModel *)model
++ (void)RequestWithNetworkModel:(CPXNetworkManagerModel *)model
                      responseCache:(CPXHttpRequestCache)responseCaches
                            success:(CPXHttpRequestSuccess)success
                            failure:(CPXHttpRequestFailed)failure {
@@ -44,8 +44,6 @@
         //body请求
         [self HTTPBody:model.urlStr prams:model.params body:model.bodyDic requestMethod:methodArray[model.requestMethod] responseCache:responseCaches success:success failure:failure];
     }else{
-        //FIXME:这里配置头文件参数
-        [self setValue:@"9" forHTTPHeaderField:@"fromType"];
         switch (model.requestMethod) {
             case CPXRequestMethodGET:
                 [self GET:model.urlStr parameters:model.params responseCache:responseCaches success:success failure:failure];
@@ -98,14 +96,7 @@
         return NO;
     }
     
-    //无效 要将缓存清理掉
-//    id cacheContent = [CPXNetworkCache httpCacheForURL:model.cacheKey];
-//    if (cacheContent != nil) {
-//        [CPXNetworkCache removeHttpDataForKey:model.cacheKey];
-//    }
-//    if (timeData != nil) {
-//        [CPXNetworkCache removeHttpDataForKey:timeStoreKey];
-//    }
+
     
     return YES;
 }

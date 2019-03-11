@@ -73,7 +73,8 @@ static AFHTTPSessionManager *_sessionManager;
 }
 
 + (void)cancelAllRequest {
-    // 锁操作
+    // 锁操作 ([self allSessionTask] 可用 [_sessionManager downloadTasks]代替)
+   
     @synchronized(self) {
         [[self allSessionTask] enumerateObjectsUsingBlock:^(NSURLSessionTask  *_Nonnull task, NSUInteger idx, BOOL * _Nonnull stop) {
             [task cancel];
@@ -197,9 +198,7 @@ static AFHTTPSessionManager *_sessionManager;
     // 添加最新的sessionTask到数组
     sessionTask ? [[self allSessionTask] addObject:sessionTask] : nil ;
     return sessionTask;
-    
-  
-    
+        
     
     
 }
@@ -442,6 +441,20 @@ static AFHTTPSessionManager *_sessionManager;
     downloadTask ? [[self allSessionTask] addObject:downloadTask] : nil ;
     
     return downloadTask;
+}
+//下载文件（断点下载）
++ (__kindof NSURLSessionTask *)AFDownLoadFileWithUrl:(NSString*)urlHost
+                                            progress:(DowningProgress)progress
+                                             fileDir:(NSString *)fileDir
+                                             success:(DonwLoadSuccessBlock)success
+                                             failure:(DownLoadfailBlock)failure{
+    
+    NSString *localPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    // 要检查的文件目录
+    NSString *filePath = [localPath  stringByAppendingPathComponent:fileDir ? fileDir : @"Download"];
+   NSURL *fileUrl = [NSURL fileURLWithPath:filePath isDirectory:NO];
+    return [[CPXServerDownLoadTool sharedTool] AFDownLoadFileWithUrl:urlHost progress:progress fileLocalUrl:fileUrl success:success failure:failure];
+    
 }
 
 /**

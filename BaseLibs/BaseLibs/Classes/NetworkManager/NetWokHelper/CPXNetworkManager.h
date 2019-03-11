@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param success 成功的回调
  @param failure 失败的回调
  */
-+ (void)CPXRequestWithNetworkModel:(CPXNetworkManagerModel *)model
++ (void)RequestWithNetworkModel:(CPXNetworkManagerModel *)model
                            success:(CPXHttpRequestSuccess)success
                            failure:(CPXHttpRequestFailed)failure;
     
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param success 成功回调
  @param failure 失败回调
  */
-+ (void)CPXRequestWithNetworkModel:(CPXNetworkManagerModel *)model
++ (void)RequestWithNetworkModel:(CPXNetworkManagerModel *)model
                      responseCache:(CPXHttpRequestCache)responseCache
                            success:(CPXHttpRequestSuccess)success
                            failure:(CPXHttpRequestFailed)failure;

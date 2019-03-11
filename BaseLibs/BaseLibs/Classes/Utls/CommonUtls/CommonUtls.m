@@ -7,13 +7,11 @@
 //
 
 #import "CommonUtls.h"
-#import <ZLPhotoBrowser.h>
-#import <ZLPhotoActionSheet.h>
 #import "NSDictionary+Basic.h"
 @implementation CommonUtls
 
 
-+(void)presentImagePickControllerWithImageNumber:(NSInteger)number type:(PhotoImagePickerStyle)style complet:(void (^)(NSArray<UIImage *> *__nullable imagesArray))selectImageBlock{
++(ZLPhotoActionSheet *)presentImagePickControllerWithImageNumber:(NSInteger)number type:(PhotoImagePickerStyle)style complet:(void (^)(NSArray<UIImage *> *__nullable imagesArray))selectImageBlock{
     ZLPhotoActionSheet *actionSheet = [[ZLPhotoActionSheet alloc] init];
     //以下参数为自定义参数，均可不设置，有默认值
     //设置相册内部显示拍照按钮
@@ -86,7 +84,7 @@
         NSLog(@"取消选择图片");
 
     };
-    
+    return actionSheet;
 }
 //图片浏览器
 +(void)showPhotoBrowserWithImages:(NSArray *)imageArray

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C054318ECAF04BD8EB755F4 /* libPods-FunctionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC62DACDCC011E1C98DB49A0 /* libPods-FunctionDemo.a */; };
+		BF085CCA22321CAC003969A1 /* DMPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF085CC822321CAC003969A1 /* DMPagingScrollView.m */; };
 		BF5A9940222F8D4D00A8D042 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A993F222F8D4D00A8D042 /* TipViewController.m */; };
 		BF5A9944222FA3AD00A8D042 /* YZBottomSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9943222FA3AD00A8D042 /* YZBottomSelectView.m */; };
 		BF5A9951222FA50600A8D042 /* YBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A994F222FA50600A8D042 /* YBViewController.m */; };
@@ -27,6 +28,7 @@
 		BF5A9982222FB96100A8D042 /* NaviDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9981222FB96100A8D042 /* NaviDemoViewController.m */; };
 		BF5A9986222FC1A400A8D042 /* LoginShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9985222FC1A400A8D042 /* LoginShareViewController.m */; };
 		BF5A9988222FC2AE00A8D042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF5A9987222FC2AE00A8D042 /* GoogleService-Info.plist */; };
+		BFCA6ADD2230ECB0004BFB9D /* DownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA6ADC2230ECB0004BFB9D /* DownViewController.m */; };
 		C9CF17D3222F675E009157FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17D2222F675E009157FE /* AppDelegate.m */; };
 		C9CF17D6222F675E009157FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17D5222F675E009157FE /* ViewController.m */; };
 		C9CF17D9222F675E009157FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CF17D7222F675E009157FE /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		53AD0A26ABE3BEF341956CC4 /* Pods-FunctionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionDemo/Pods-FunctionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		545116C2D500A3DBD5E5CB8A /* Pods-FunctionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionDemo/Pods-FunctionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BF085CC822321CAC003969A1 /* DMPagingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPagingScrollView.m; sourceTree = "<group>"; };
+		BF085CC922321CAC003969A1 /* DMPagingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPagingScrollView.h; sourceTree = "<group>"; };
 		BF5A993E222F8D4D00A8D042 /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		BF5A993F222F8D4D00A8D042 /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		BF5A9942222FA3AD00A8D042 /* YZBottomSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZBottomSelectView.h; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		BF5A9984222FC1A400A8D042 /* LoginShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginShareViewController.h; sourceTree = "<group>"; };
 		BF5A9985222FC1A400A8D042 /* LoginShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginShareViewController.m; sourceTree = "<group>"; };
 		BF5A9987222FC2AE00A8D042 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFCA6ADB2230ECB0004BFB9D /* DownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownViewController.h; sourceTree = "<group>"; };
+		BFCA6ADC2230ECB0004BFB9D /* DownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownViewController.m; sourceTree = "<group>"; };
 		C9CF17CE222F675E009157FE /* FunctionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF17D1222F675E009157FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9CF17D2222F675E009157FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -260,6 +266,8 @@
 				C9CF17F3222F6CA9009157FE /* 网络请求 */,
 				C9CF17EB222F69FD009157FE /* BaseController.h */,
 				C9CF17EA222F69FD009157FE /* BaseController.m */,
+				BF085CC922321CAC003969A1 /* DMPagingScrollView.h */,
+				BF085CC822321CAC003969A1 /* DMPagingScrollView.m */,
 				C9CF17D1222F675E009157FE /* AppDelegate.h */,
 				C9CF17D2222F675E009157FE /* AppDelegate.m */,
 				C9CF17D4222F675E009157FE /* ViewController.h */,
@@ -282,6 +290,8 @@
 				C9CF17EE222F69FD009157FE /* DemoBaseController.h */,
 				C9CF17EC222F69FD009157FE /* DemoBaseController.m */,
 				C9CF17ED222F69FD009157FE /* DemoBaseController.xib */,
+				BFCA6ADB2230ECB0004BFB9D /* DownViewController.h */,
+				BFCA6ADC2230ECB0004BFB9D /* DownViewController.m */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -451,6 +461,7 @@
 				C9CF17DC222F675E009157FE /* FunctionDemo.xcdatamodeld in Sources */,
 				C9CF17EF222F69FD009157FE /* BaseController.m in Sources */,
 				BF5A9974222FB11300A8D042 /* DetailViewController.m in Sources */,
+				BFCA6ADD2230ECB0004BFB9D /* DownViewController.m in Sources */,
 				BF5A997E222FB4E000A8D042 /* EmptyTestViewController.m in Sources */,
 				BF5A9944222FA3AD00A8D042 /* YZBottomSelectView.m in Sources */,
 				BF5A9976222FB11300A8D042 /* MainViewController.m in Sources */,
@@ -464,6 +475,7 @@
 				BF5A9986222FC1A400A8D042 /* LoginShareViewController.m in Sources */,
 				BF5A9975222FB11300A8D042 /* UIColor+Hexadecimal.m in Sources */,
 				BF5A9960222FA57B00A8D042 /* YBPopupMenu.m in Sources */,
+				BF085CCA22321CAC003969A1 /* DMPagingScrollView.m in Sources */,
 				C9CF17F0222F69FD009157FE /* DemoBaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +621,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3GY5A3Y9Y;
-				GCC_PREFIX_HEADER = "$SRCROOT/FunctionDemo/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/FunctionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -628,7 +640,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3GY5A3Y9Y;
-				GCC_PREFIX_HEADER = "$SRCROOT/FunctionDemo/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/FunctionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

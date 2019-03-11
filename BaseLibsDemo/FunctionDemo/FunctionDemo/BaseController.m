@@ -29,7 +29,7 @@
 }
 
 - (void)configData {
-    NSArray *array = [NSArray arrayWithObjects:@"网络缓存",@"各种提示框",@"空白试图占位图",@"导航栏的处理",@"三方登录与分享",nil];
+    NSArray *array = [NSArray arrayWithObjects:@"网络请求/断点下载",@"各种提示框",@"空白试图占位图",@"导航栏的处理",@"三方登录与分享",@"相册选择与图片编辑",nil];
     [self.titleArray addObjectsFromArray:array];
 }
 
@@ -86,10 +86,18 @@
         case 4:{
             vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"LoginShareViewController"];
         }
-            
+            break;
+        case 5:{
+            [CommonUtls presentImagePickControllerWithImageNumber:20 type:0 complet:^(NSArray<UIImage *> * _Nullable imagesArray) {
+                
+            }];
+            return;
+        }
+            break;
         default:
             break;
     }
+    
     vc.navigationItem.title =self.titleArray[type];
     [self.navigationController pushViewController:vc animated:YES];
 

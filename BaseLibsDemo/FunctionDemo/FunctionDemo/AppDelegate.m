@@ -40,7 +40,6 @@
         
     }];
     return YES;
-    return YES;
 }
 
 

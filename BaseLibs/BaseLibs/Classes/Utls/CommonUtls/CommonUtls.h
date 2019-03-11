@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <ZLPhotoActionSheet.h>
+#import <ZLPhotoBrowser.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -34,7 +37,7 @@ typedef NS_ENUM(NSUInteger, PhotoImagePickerStyle) {
  @param number 图片选择的张数
  @param selectImageBlock 图片选择成功的回调
  */
-+(void)presentImagePickControllerWithImageNumber:(NSInteger)number type:(PhotoImagePickerStyle)style complet:(void (^)(NSArray<UIImage *> *__nullable imagesArray))selectImageBlock;
++(ZLPhotoActionSheet*)presentImagePickControllerWithImageNumber:(NSInteger)number type:(PhotoImagePickerStyle)style complet:(void (^)(NSArray<UIImage *> *__nullable imagesArray))selectImageBlock;
 
 /**
  图片浏览器（可选择样式）
@@ -99,6 +102,8 @@ typedef NS_ENUM(NSUInteger, PhotoImagePickerStyle) {
  设置状态栏颜色
  */
 + (void)setStatusBarBackgroundColor:(UIColor *)color;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
