@@ -472,8 +472,8 @@
 		BFD2E35321A6A57D009BA11A /* LaunchIntroduction */ = {
 			isa = PBXGroup;
 			children = (
-				BFD2E35421A6A57D009BA11A /* LaunchIntroductionView.m */,
 				BFD2E35521A6A57D009BA11A /* LaunchIntroductionView.h */,
+				BFD2E35421A6A57D009BA11A /* LaunchIntroductionView.m */,
 			);
 			path = LaunchIntroduction;
 			sourceTree = "<group>";
