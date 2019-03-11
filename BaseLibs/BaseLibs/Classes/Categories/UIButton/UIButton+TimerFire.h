@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 用于展示倒计时按钮（获取验证码按钮
+ */
 @interface UIButton (TimerFire)
 
 
@@ -16,7 +19,7 @@
 
 
 /**
- 设置边框颜色和圆角、title
+ 设置按钮边框颜色和圆角、title
 
  */
 -(void)setBorderColorAndTitleColor;

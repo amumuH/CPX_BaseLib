@@ -65,7 +65,7 @@ typedef NS_ENUM(NSInteger,GradientDirection) {
 - (void)cpx_roundedCornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color corners:(UIRectCorner)corners;
 
 /**
- 设置一个带边框的圆角
+
  
  @param cornerRadii 圆角半径cornerRadii
  @param color       圆角背景色

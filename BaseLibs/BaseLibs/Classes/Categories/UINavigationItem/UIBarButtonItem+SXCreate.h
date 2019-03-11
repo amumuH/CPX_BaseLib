@@ -62,8 +62,8 @@
  @param Image image
  @param title title
  @param font font
- @param Company / Organization 布局方式
- @param imageTitleSpace 间隔
+ @param style / Organization 布局方式
+ @param space 间隔
  @param titleColor 颜色
  */
 +(UIBarButtonItem *)cpx_itemWithTarget:(id)target
@@ -120,7 +120,7 @@
 
 
 /**
- 用作修正位置的UIBarButtonItem
+ 用作修正UIBarButtonItem的位置
 
  @param width 修正宽度
  @return 修正位置的UIBarButtonItem

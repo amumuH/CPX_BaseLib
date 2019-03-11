@@ -15,7 +15,7 @@ typedef void (^DowningProgress)(CGFloat  progress);
 
 
 /**
- 此类用于断点下载
+ 此类用于断点下载(当程序意外退出或后台退出会保存下载记录)
  */
 @interface CPXServerDownLoadTool : NSObject
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (AZGradient)
-//渐变色
+//渐变色 https://www.jianshu.com/p/e7c9e94e165b
 
 /* The array of CGColorRef objects defining the color of each gradient
  * stop. Defaults to nil. Animatable. */
