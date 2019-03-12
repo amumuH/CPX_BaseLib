@@ -52,9 +52,9 @@
 		<string>Lato-Regular.ttf</string>
 	</array>
 	<key>FacebookAppID</key>
-	<string>1300436050058476</string>
+	<string>1</string>
 	<key>FacebookDisplayName</key>
-	<string>Clawin</string>
+	<string>1</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>com.google.gppconsent.2.4.1</string>
@@ -85,9 +85,9 @@
 	<key>MOBAppSecret</key>
 	<string>0226c59446703219a713dc1472b16212</string>
 	<key>TwitterConsumerKey</key>
-	<string>cO9owckJXvfk34poSia8ykPLR</string>
+	<string></string>
 	<key>TwitterConsumerSecret</key>
-	<string>BeMaY68aSh2qaZqLWZ32kZhZhkBloFihHfpjybIAEgtr8dACEJ</string>
+	<string></string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -95,7 +95,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1300436050058476</string>
+				<string></string>
 			</array>
 		</dict>
 		<dict>
@@ -105,7 +105,7 @@
 			<string>DANAMIC_LINK</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>FIRBASEDANAMICLINKURLSCHEMESFORUS</string>
+				<string></string>
 			</array>
 		</dict>
 		<dict>
@@ -115,7 +115,7 @@
 			<string>google</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.959403501172-0u1mqe2632ru8hvrs4t2h1vgn7fe5n1g</string>
+				<string></string>
 			</array>
 		</dict>
 		<dict>
@@ -125,7 +125,7 @@
 			<string>twitter</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>twitterkit-cO9owckJXvfk34poSia8ykPLR</string>
+				<string></string>
 			</array>
 		</dict>
 	</array>

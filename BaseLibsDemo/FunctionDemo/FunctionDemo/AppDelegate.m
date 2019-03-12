@@ -29,13 +29,13 @@
     [ShareSDK registPlatforms:^(SSDKRegister *platformsRegister) {
         
         //Facebook
-        [platformsRegister setupFacebookWithAppkey:@"1300436050058476" appSecret:@"a42f4f3f867dc947b9ed6020c2e93558" displayName:@"Clawin"];
+        [platformsRegister setupFacebookWithAppkey:@"" appSecret:@"" displayName:@"Clawin"];
         
         //Twitter
-        [platformsRegister setupTwitterWithKey:@"cO9owckJXvfk34poSia8ykPLR" secret:@"BeMaY68aSh2qaZqLWZ32kZhZhkBloFihHfpjybIAEgtr8dACEJ" redirectUrl:@"http://wwjus.catchadoll.com"];
+        [platformsRegister setupTwitterWithKey:@"" secret:@"" redirectUrl:@""];
         
         //Google+  授权仅支持web授权，分享仅支持web分享，分享类型仅支持Text和WebPage。
-        [platformsRegister setupGooglePlusByClientID:@"906418427202-jinnbqal1niq4s8isbg2ofsqc5ddkcgr.apps.googleusercontent.com" clientSecret:@"" redirectUrl:@"http://localhost"];
+        [platformsRegister setupGooglePlusByClientID:@"" clientSecret:@"" redirectUrl:@""];
         
         
     }];
