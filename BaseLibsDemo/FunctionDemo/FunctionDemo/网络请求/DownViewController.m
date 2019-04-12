@@ -7,6 +7,7 @@
 //
 
 #import "DownViewController.h"
+#import "ZipArchive.h"
 
 @interface DownViewController (){
     NSString  *downLoadUrl;
@@ -28,6 +29,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
+//    [self archieve];
+    
+}
+-(void)archieve{
+  MBProgressHUD *hub  = [CPXAlertUtils loading:@"解压中" toView:self.view];
+    NSString *fileDir = @"downlodM213P311.zip";
+    NSString *localPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    // 要检查的文件目录
+    NSString *zipPath = [localPath  stringByAppendingPathComponent:fileDir ? fileDir : @"Download"];//下载的zip包存放路径
+    //解压文件存放路径
+    NSString *finishPath =[localPath  stringByAppendingPathComponent:[fileDir stringByReplacingOccurrencesOfString:@".zip" withString:@""]];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [SSZipArchive unzipFileAtPath:zipPath toDestination:finishPath progressHandler:^(NSString * _Nonnull entry, unz_file_info zipInfo, long entryNumber, long total) {
+            
+        } completionHandler:^(NSString * _Nonnull path, BOOL succeeded, NSError * _Nullable error) {
+            
+        }] ;
+        //解压完成 删除压缩包
+//        NSFileManager *fileManager = [NSFileManager defaultManager];
+        //        [fileManager removeItemAtPath:zipPath error:nil];
+        //回到主线程
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [CPXAlertUtils stopLoading:hub message:@"解压完成"];
+
+        });
+    });
+    //解压zip文件
+
     
 }
 -(void)initUI{
@@ -48,11 +77,14 @@
             self.progress.progress = progress;
             self.progressLabel.text = [NSString stringWithFormat:@"%.2f/100",progress*100];
         });
-    } fileDir:@"downlod_12344.mp4" success:^(NSURL *fileUrlPath, NSURLResponse *response) {
+    } fileDir:@"downlodM213P33.mp4" success:^(NSURL *fileUrlPath, NSURLResponse *response) {
         NSLog(@"下载成功 下载的文档路径是 %@, ",fileUrlPath);
+//        [self archieve];
+
 
     } failure:^(NSError *error, NSInteger statusCode) {
         NSLog(@"下载失败,下载的data被downLoad工具处理了 ");
+        //Code=28 "No space left on device
 
     }];
             

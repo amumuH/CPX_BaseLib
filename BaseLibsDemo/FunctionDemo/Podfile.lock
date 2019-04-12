@@ -64,6 +64,7 @@ PODS:
   - SDWebImage/GIF (4.2.3):
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
+  - SSZipArchive (2.1.4)
   - YYCache (1.0.4)
   - ZLPhotoBrowser (2.7.6):
     - GPUImage
@@ -75,6 +76,7 @@ DEPENDENCIES:
   - mob_sharesdk/ShareSDKPlatforms/Facebook
   - mob_sharesdk/ShareSDKPlatforms/GooglePlus
   - mob_sharesdk/ShareSDKPlatforms/Twitter
+  - SSZipArchive
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -94,6 +96,7 @@ SPEC REPOS:
     - MOBFoundation
     - PYPhotoBrowser
     - SDWebImage
+    - SSZipArchive
     - YYCache
     - ZLPhotoBrowser
 
@@ -119,9 +122,10 @@ SPEC CHECKSUMS:
   MOBFoundation: ca11e6640e995875ff755faa56ea324eed260e70
   PYPhotoBrowser: 74f6526b290069a55943ed92e5a21f84c6d90ecf
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   ZLPhotoBrowser: 6dfadc4706429424f0a851fe40752aff076689ab
 
-PODFILE CHECKSUM: 436431e6459c1fa713c599f85cfb3b8b19b10f67
+PODFILE CHECKSUM: 69c383bfe0c32779b89accee763b0dbe20534459
 
 COCOAPODS: 1.5.3

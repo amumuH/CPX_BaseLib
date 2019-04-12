@@ -28,6 +28,7 @@
 		BF5A9982222FB96100A8D042 /* NaviDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9981222FB96100A8D042 /* NaviDemoViewController.m */; };
 		BF5A9986222FC1A400A8D042 /* LoginShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A9985222FC1A400A8D042 /* LoginShareViewController.m */; };
 		BF5A9988222FC2AE00A8D042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF5A9987222FC2AE00A8D042 /* GoogleService-Info.plist */; };
+		BFAA71202249F691000CE8A9 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAA711F2249F690000CE8A9 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BFCA6ADD2230ECB0004BFB9D /* DownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA6ADC2230ECB0004BFB9D /* DownViewController.m */; };
 		C9CF17D3222F675E009157FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17D2222F675E009157FE /* AppDelegate.m */; };
 		C9CF17D6222F675E009157FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CF17D5222F675E009157FE /* ViewController.m */; };
@@ -79,6 +80,7 @@
 		BF5A9984222FC1A400A8D042 /* LoginShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginShareViewController.h; sourceTree = "<group>"; };
 		BF5A9985222FC1A400A8D042 /* LoginShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginShareViewController.m; sourceTree = "<group>"; };
 		BF5A9987222FC2AE00A8D042 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFAA711F2249F690000CE8A9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		BFCA6ADB2230ECB0004BFB9D /* DownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownViewController.h; sourceTree = "<group>"; };
 		BFCA6ADC2230ECB0004BFB9D /* DownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownViewController.m; sourceTree = "<group>"; };
 		C9CF17CE222F675E009157FE /* FunctionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAA71202249F691000CE8A9 /* UserNotifications.framework in Frameworks */,
 				9C054318ECAF04BD8EB755F4 /* libPods-FunctionDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +302,7 @@
 		CE14862EE6CBC31B57867226 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFAA711F2249F690000CE8A9 /* UserNotifications.framework */,
 				EC62DACDCC011E1C98DB49A0 /* libPods-FunctionDemo.a */,
 			);
 			name = Frameworks;
@@ -620,9 +624,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M3GY5A3Y9Y;
+				DEVELOPMENT_TEAM = UH4R48B27R;
 				GCC_PREFIX_HEADER = $SRCROOT/FunctionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,9 +644,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M3GY5A3Y9Y;
+				DEVELOPMENT_TEAM = UH4R48B27R;
 				GCC_PREFIX_HEADER = $SRCROOT/FunctionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

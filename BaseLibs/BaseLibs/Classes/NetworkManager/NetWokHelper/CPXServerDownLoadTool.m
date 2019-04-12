@@ -27,13 +27,11 @@ static CPXServerDownLoadTool *tool = nil;
     if (self) {
   
         self.manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
-        
         NSURLSessionDownloadTask *task;
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(downLoadData:)
-                                                     name:AFNetworkingTaskDidCompleteNotification
-                                                   object:task];
         
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downLoadData:) name:AFNetworkingTaskDidCompleteNotification object:task];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(comeHome:) name:@"UIApplicationDidEnterBackgroundNotification" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminate:) name:@"UIApplicationDidEnterBackgroundNotification" object:nil];
         NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
         NSString *path=[paths     objectAtIndex:0];
         self.fileHistoryPath=[path stringByAppendingPathComponent:@"fileDownLoadHistory.plist"];
@@ -50,6 +48,13 @@ static CPXServerDownLoadTool *tool = nil;
     return  self;
 }
 
+
+/**
+ 保存下载进度
+
+ @param key key
+ @param data 已下载的数据
+ */
 - (void)saveHistoryWithKey:(NSString *)key DownloadTaskResumeData:(NSData *)data{
     if (!data) {
         NSString *emptyData = [NSString stringWithFormat:@""];
@@ -61,8 +66,17 @@ static CPXServerDownLoadTool *tool = nil;
     
   [self.downLoadHistoryDictionary writeToFile:self.fileHistoryPath atomically:NO];
 }
+
 - (void)saveDownLoadHistoryDirectory{
     [self.downLoadHistoryDictionary writeToFile:self.fileHistoryPath atomically:YES];
+}
+
+//删除对应key的下载数据
+- (void)deleteDownLoadHistory:(NSString*)key{
+    if ([self.downLoadHistoryDictionary valueForKey:key]) {
+        [self.downLoadHistoryDictionary removeObjectForKey:key];
+        [self saveDownLoadHistoryDirectory];
+    }
 }
 - (NSURLSessionDownloadTask *)AFDownLoadFileWithUrl:(NSString*)urlHost
                                            progress:(DowningProgress)progress
@@ -152,23 +166,33 @@ static CPXServerDownLoadTool *tool = nil;
             [self saveHistoryWithKey:urlHost DownloadTaskResumeData:resumeData];
             //这个是因为 用户比如强退程序之后 ,再次进来的时候 存进去这个继续的data  需要用户去刷新列表
         }else{
-            if ([self.downLoadHistoryDictionary valueForKey:urlHost]) {
-                [self.downLoadHistoryDictionary removeObjectForKey:urlHost];
-                [self saveDownLoadHistoryDirectory];
-            }
+            //下载成功，删除下载记录进度
+            [self deleteDownLoadHistory:urlHost];
         }
     }
     
+}
+
+
+- (void)comeHome:(UIApplication *)application {
+   
+}
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [self stopAllDownLoadTasks];
+    NSLog(@"程序被杀死");
 }
 - (void)stopAllDownLoadTasks{
     //停止所有的下载
     if ([[self.manager downloadTasks] count]  == 0) {
         return;
     }
+    __weak typeof(self)weakSelf = self;
     for (NSURLSessionDownloadTask *task in  [self.manager downloadTasks]) {
         if (task.state == NSURLSessionTaskStateRunning) {
+            NSString *urlHost = [task.currentRequest.URL absoluteString];
             [task cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
-                
+                [weakSelf saveHistoryWithKey:urlHost DownloadTaskResumeData:resumeData];
+
             }];
         }
     }

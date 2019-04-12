@@ -45,7 +45,6 @@
 		BFD2E3BE21A6A57E009BA11A /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E35821A6A57D009BA11A /* UIViewExt.m */; };
 		BFD2E3BF21A6A57E009BA11A /* GraphicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E35B21A6A57D009BA11A /* GraphicTool.m */; };
 		BFD2E3C021A6A57E009BA11A /* ColorEx.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E35D21A6A57D009BA11A /* ColorEx.m */; };
-		BFD2E3C121A6A57E009BA11A /* HJCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E36121A6A57D009BA11A /* HJCornerRadius.m */; };
 		BFD2E3C221A6A57E009BA11A /* CPXAlertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E36521A6A57E009BA11A /* CPXAlertUtils.m */; };
 		BFD2E3C321A6A57E009BA11A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFD2E36621A6A57E009BA11A /* MBProgressHUD.bundle */; };
 		BFD2E3C421A6A57E009BA11A /* CommonUtls.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD2E36821A6A57E009BA11A /* CommonUtls.m */; };
@@ -182,8 +181,6 @@
 		BFD2E35C21A6A57D009BA11A /* ColorEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorEx.h; sourceTree = "<group>"; };
 		BFD2E35D21A6A57D009BA11A /* ColorEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorEx.m; sourceTree = "<group>"; };
 		BFD2E35E21A6A57D009BA11A /* GraphicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicTool.h; sourceTree = "<group>"; };
-		BFD2E36021A6A57D009BA11A /* HJCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCornerRadius.h; sourceTree = "<group>"; };
-		BFD2E36121A6A57D009BA11A /* HJCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCornerRadius.m; sourceTree = "<group>"; };
 		BFD2E36421A6A57E009BA11A /* CPXAlertUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPXAlertUtils.h; sourceTree = "<group>"; };
 		BFD2E36521A6A57E009BA11A /* CPXAlertUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPXAlertUtils.m; sourceTree = "<group>"; };
 		BFD2E36621A6A57E009BA11A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -511,8 +508,6 @@
 		BFD2E35F21A6A57D009BA11A /* UIimageView */ = {
 			isa = PBXGroup;
 			children = (
-				BFD2E36021A6A57D009BA11A /* HJCornerRadius.h */,
-				BFD2E36121A6A57D009BA11A /* HJCornerRadius.m */,
 			);
 			path = UIimageView;
 			sourceTree = "<group>";
@@ -1013,7 +1008,6 @@
 				BFD2E3DC21A6A57E009BA11A /* UIViewController+Basic.m in Sources */,
 				BF11C94121D5BADC0084022D /* CPXBaseAlertView.m in Sources */,
 				BFD2E3B121A6A57E009BA11A /* CPXBaseViewController.m in Sources */,
-				BFD2E3C121A6A57E009BA11A /* HJCornerRadius.m in Sources */,
 				BFD2E3CC21A6A57E009BA11A /* UIView+GetController.m in Sources */,
 				C996BFD621E48E7500C9D47E /* UIView+AZGradient.m in Sources */,
 				BFD2E3BD21A6A57E009BA11A /* LaunchIntroductionView.m in Sources */,

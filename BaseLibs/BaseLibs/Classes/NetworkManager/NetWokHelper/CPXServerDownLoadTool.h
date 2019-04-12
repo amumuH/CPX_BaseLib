@@ -46,6 +46,13 @@ typedef void (^DowningProgress)(CGFloat  progress);
                                              success:(DonwLoadSuccessBlock)success
                                              failure:(DownLoadfailBlock)failure;
 
+/**
+ 删除对应key所对应的下载数据（用于数据未下载完删除当前进度，使用方法需先取消当前任务）
+
+ @param key key
+ */
+- (void)deleteDownLoadHistory:(NSString*)key;
+
 /** 停止所有的下载任务*/
 - (void)stopAllDownLoadTasks;
 @end

@@ -53,7 +53,6 @@
 #import "ColorEx.h"
 #import "GraphicTool.h"
 #import "UIViewExt.h"
-#import "HJCornerRadius.h"
 
 //******************ThirdPart************//
 #import "MJRefresh.h"

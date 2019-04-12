@@ -10,4 +10,5 @@ pod 'mob_sharesdk'
 pod 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
 pod 'mob_sharesdk/ShareSDKPlatforms/Facebook'
 pod 'mob_sharesdk/ShareSDKPlatforms/Twitter'
+pod 'SSZipArchive'
 end

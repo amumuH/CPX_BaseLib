@@ -15,8 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- 异步缓存网络数据,根据请求的 URL与parameters
- 做KEY存储数据, 这样就能缓存多级页面的数据
+ 异步缓存网络数据,根据请求的 URL与parameters，做KEY存储数据, 这样就能缓存多级页面的数据
  
  @param httpData 服务器返回的数据
  @param URL 请求的URL地址
